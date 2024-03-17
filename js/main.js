@@ -26,17 +26,17 @@ function init() {
     controls.screenSpacePanning = false;
 
     // Audio (Background Music)
-  const listener = new THREE.AudioListener;
-  camera.add(listener);
-  const audioLoader = new THREE.AudioLoader;
-  const backgroundSound = new THREE.Audio(listener);
+    const listener = new THREE.AudioListener;
+    camera.add(listener);
+    const audioLoader = new THREE.AudioLoader;
+    const backgroundSound = new THREE.Audio(listener);
 
-  audioLoader.load('/audio/OMORI OST - WHITE SPACE.mp3', function(buffer){
-    backgroundSound.setBuffer(buffer);
-    backgroundSound.setLoop(true);
-    backgroundSound.setVolume(0.5);
-    backgroundSound.play();
-  })
+    audioLoader.load('/audio/OMORI OST - WHITE SPACE.mp3', function(buffer){
+      backgroundSound.setBuffer(buffer);
+      backgroundSound.setLoop(true);
+      backgroundSound.setVolume(0.5);
+      backgroundSound.play();
+    })
 
     // MEWO THE CAT
     // cat body
