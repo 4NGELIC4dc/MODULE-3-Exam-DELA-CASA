@@ -40,7 +40,7 @@ function init() {
 
     // MEWO THE CAT
     // cat body
-    const bodyGeometry = new THREE.SphereGeometry(0.25, 32, 32, 0, Math.PI * 2, 0, Math.PI * 0.7); // Cut off 25% of the sphere
+    const bodyGeometry = new THREE.SphereGeometry(0.25, 32, 32, 0, Math.PI * 2, 0, Math.PI * 0.7); 
     const bodyMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
     const body = new THREE.Mesh(bodyGeometry, bodyMaterial);
     body.position.y = -0.75;
@@ -140,7 +140,7 @@ function init() {
     const catEars = new THREE.Group();
     catEars.add(ear1);
     catEars.add(ear2);
-    catEars.position.set(-0.2, -0.44, 0.21); //-0.2, -0.45, 0.21
+    catEars.position.set(-0.2, -0.44, 0.21);
     body.add(catEars);
 
     // TISSUE BOX
@@ -176,7 +176,7 @@ function init() {
     //LAPTOP
     const laptopGroup = new THREE.Group();
 
-   // laptop base
+    // laptop base
     const laptopGeometry = new THREE.BoxGeometry(0.95, 0.6, 0.025); 
     const laptopEdgeMaterial = new THREE.LineBasicMaterial({ color: 0xffffff });
     const laptopEdges = new THREE.EdgesGeometry(laptopGeometry);
@@ -372,7 +372,7 @@ function init() {
     const borderMaterial = new THREE.MeshPhongMaterial({ color: 0x000000 });
     const border = new THREE.Mesh(borderGeometry, borderMaterial);
     border.rotation.x = -Math.PI / 2;
-    border.position.y = -0.9; // Slightly above the floor
+    border.position.y = -0.9;
     scene.add(border);
 
     function render() {
